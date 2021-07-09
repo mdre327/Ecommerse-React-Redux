@@ -1,0 +1,308 @@
+// -------------misc ------------------
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.u-text-left {
+  text-align: left;
+}
+
+.u-float-left {
+  float: left;
+}
+
+.u-float-right {
+  float: right;
+}
+.u-disp-none {
+  display: none !important;
+}
+
+.u-disp-block {
+  display: block !important;
+}
+
+.u-link,
+a {
+  cursor: pointer;
+  color: $color-primary-light !important;
+  text-decoration: none;
+  &:hover {
+    color: $color-primary !important;
+  }
+}
+
+.u-btn {
+  cursor: pointer;
+  background-color: $color-primary-light !important;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: $color-cly-white;
+  &:hover {
+    background-color: $color-primary !important;
+  }
+}
+
+.u-label-imp::after {
+  content: "*";
+  color: $color-tertiary-light;
+}
+
+// -------------misc ------------------
+
+// -------------padding ------------------
+.u-pd-t5 {
+  padding-top: 0.5rem;
+}
+.u-pd-t10 {
+  padding-top: 1rem;
+}
+.u-pd-t20 {
+  padding-top: 2rem;
+}
+
+.u-pd-b5 {
+  padding-bottom: 0.5rem;
+}
+.u-pd-b10 {
+  padding-bottom: 1rem;
+}
+.u-pd-b20 {
+  padding-bottom: 2rem;
+}
+
+.u-pd-l5 {
+  padding-left: 0.5rem;
+}
+.u-pd-l10 {
+  padding-left: 1rem;
+}
+.u-pd-l20 {
+  padding-left: 2rem;
+}
+
+.u-pd-r5 {
+  padding-right: 0.5rem;
+}
+.u-pd-r10 {
+  padding-right: 1rem;
+}
+.u-pd-r20 {
+  padding-right: 2rem;
+}
+
+.u-pd-tb5 {
+  padding: 0.5rem 0;
+}
+.u-pd-lr5 {
+  padding: 0 0.5rem;
+}
+
+.u-pd-tb10 {
+  padding: 1rem 0;
+}
+.u-pd-lr10 {
+  padding: 0 1rem;
+}
+
+.u-pd-tb20 {
+  padding: 2rem 0;
+}
+.u-pd-lr20 {
+  padding: 0 2rem;
+}
+// -------------padding ------------------
+
+// -------------margin ------------------
+.u-mg-t5 {
+  margin-top: 0.5rem;
+}
+.u-mg-t10 {
+  margin-top: 1rem;
+}
+.u-mg-t20 {
+  margin-top: 2rem;
+}
+
+.u-mg-b5 {
+  margin-bottom: 0.5rem;
+}
+.u-mg-b10 {
+  margin-bottom: 1rem;
+}
+.u-mg-b20 {
+  margin-bottom: 2rem;
+}
+
+.u-mg-l5 {
+  margin-left: 0.5rem;
+}
+.u-mg-l10 {
+  margin-left: 1rem;
+}
+.u-mg-l20 {
+  margin-left: 2rem;
+}
+
+.u-mg-r5 {
+  margin-right: 0.5rem;
+}
+.u-mg-r10 {
+  margin-right: 1rem;
+}
+.u-mg-r20 {
+  margin-right: 2rem;
+}
+
+.u-mg-tb5 {
+  margin: 0.5rem 0;
+}
+.u-mg-lr5 {
+  margin: 0 0.5rem;
+}
+
+.u-mg-tb10 {
+  margin: 1rem 0;
+}
+.u-mg-lr10 {
+  margin: 0 1rem;
+}
+
+.u-mg-tb20 {
+  margin: 2rem 0;
+}
+.u-mg-lr20 {
+  margin: 0 2rem;
+}
+// -------------margin ------------------
+
+// -------------heading components ------------------
+@mixin heading-title {
+  display: block;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.u-h1 {
+  @include heading-title;
+  font-size: 3rem !important;
+  text-transform: uppercase !important;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+.u-h2 {
+  @include heading-title;
+  font-size: 2.5rem !important;
+  text-transform: uppercase !important;
+  margin-block-start: 1.1rem;
+  margin-block-end: 1.1rem;
+}
+.u-h3 {
+  @include heading-title;
+  font-size: 2rem !important;
+  text-transform: uppercase !important;
+  margin-block-start: 1.5rem;
+  margin-block-end: 1.5rem;
+}
+.u-h4 {
+  @include heading-title;
+  font-size: 1.5rem !important;
+  text-transform: uppercase !important;
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
+}
+.u-h5 {
+  @include heading-title;
+  font-size: 1.2rem !important;
+  text-transform: uppercase !important;
+  margin-block-start: 2.5rem;
+  margin-block-end: 2.5rem;
+}
+.u-h6 {
+  @include heading-title;
+  font-size: 1rem !important;
+  text-transform: uppercase !important;
+  margin-block-start: 3.5rem;
+  margin-block-end: 3.5rem;
+}
+// -------------heading components ------------------
+
+// -------------Paragraph components ------------------
+
+@mixin paragraph-title {
+  margin-bottom: 0.3em;
+}
+.u-p1 {
+  @include paragraph-title;
+  font-size: 3rem;
+}
+.u-p2 {
+  @include paragraph-title;
+  font-size: 2.5rem;
+}
+.u-p3 {
+  @include paragraph-title;
+  font-size: 2rem;
+}
+.u-p4 {
+  @include paragraph-title;
+  font-size: 1.5rem;
+}
+.u-p5 {
+  @include paragraph-title;
+  font-size: 1.3rem;
+}
+.u-p6 {
+  @include paragraph-title;
+  font-size: 1rem;
+}
+// -------------paragraph components ------------------
+
+// -------------colors ------------------
+.clr-primary {
+  color: $color-primary !important;
+}
+.clr-bg-primary {
+  background-color: $color-primary !important;
+}
+
+.clr-white {
+  color: $color-cly-white !important;
+}
+
+.clr-cly-blue {
+  color: $color-cly-blue !important;
+}
+.clr-dark-blue {
+  background-color: $color-dark-blue !important;
+}
+.clr-light-blue{
+  color: $color-primary-light !important;
+}
+
+.clr-gr-l3 {
+  color: $color-grey-light-3 !important;
+}
+// -------------colors ------------------
+//-------------font-weight----------------
+.u-fw5 {
+  font-weight: 500;
+}
+//-------------font-weight----------------
+
+.bg-primary {
+  background-color: $color-primary;
+}
+.bg-primary-dark {
+  background-color: $color-primary-dark;
+}
+.bg-primary-light {
+  background-color: $color-primary-light;
+}

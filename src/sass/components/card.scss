@@ -1,0 +1,40 @@
+.s-card{
+    box-shadow: 1px 2px 7px 1px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 65rem;
+    height: 15rem;
+    margin: 2rem auto;
+    border: 1px solid gray;
+    padding: 1rem;
+    border-radius: 6px;
+    justify-content: space-between;
+    background: #ffffff;
+    &__prod-img{
+        height: 100%;
+        width: 19rem;
+    }
+    &__detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 33%;
+    }
+    &__titles{
+        font-size:1.7rem;
+        font-weight:bold;
+    }
+    &__desc{
+        font-size :0.89rem;
+    }
+    &__amt{
+        font-size :2rem;
+        font-weight:900;
+        text-decoration: dashed;
+    }
+    &__btn-grp{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

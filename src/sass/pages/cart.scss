@@ -1,0 +1,28 @@
+.cart{
+    display: flex;
+    flex-wrap: wrap;
+    &-summary{
+        border: 1px solid black;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        max-height:40rem;
+        max-width:19rem;
+
+    }
+    &__items{
+        display: flex;
+        flex-direction: column;  
+    }
+    &-total{
+        font-size:2rem;
+    }
+    &-items{
+        font-size:1.5rem;
+    }
+    &-total__amount{
+        font-size:2.5rem;
+        font-weight: 800;
+    }
+}

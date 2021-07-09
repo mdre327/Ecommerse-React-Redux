@@ -1,0 +1,75 @@
+/*
+Range           Target
+---------------------------------------
+0 - 320px:      phone-xs (arguement choices)
+321 - 400px:      phone-sm
+401 - 600px:    phone-lg
+601 - 900px:    tablet-sm
+901 - 1200px:   tablet-lg
+[1201 - 1800]   normal styles apply
+1800px + :      desktop-lg
+*/
+
+@mixin respond($breakpoint) {
+  @if ($breakpoint == phone-xs) {
+    @media only screen and (max-width: 20em) {
+      @content;
+    } //320px  (20 x 16)
+  }
+  @if ($breakpoint == phone-sm) {
+    @media only screen and (max-width: 25em) {
+      @content;
+    } //400px  (25 x 16)
+  }
+  @if ($breakpoint == phone-lg) {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px  (37.5 x 16)
+  }
+  @if ($breakpoint == tab-sm) {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px  (56.25 x 16)
+  }
+  @if ($breakpoint == tab-lg) {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px  (75 x 16)
+  }
+  @if ($breakpoint == desktop-lg) {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800px  (112.5 x 16)
+  }
+}
+
+
+// mixin for default input which includes icon, error, and  label 
+@mixin inputGroup {
+  .cly-input {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      height: 9rem;
+      margin-bottom:0 !important;
+      input {
+          background-color: $color-grey-light-7;
+          display: block;
+          font-family: inherit;
+          font-size: 1.6rem;
+          border-radius: 0.2rem;
+          padding: 0.5em;
+          width: 100%;
+          border: 1px solid $color-grey-dark-1;
+          height: 4.4rem;
+          outline: none;
+      }
+      i{
+          position: absolute;
+          top: 0;
+          color: $color-grey-dark-4;
+          font-weight: 600;
+
+      }
+  }
+}

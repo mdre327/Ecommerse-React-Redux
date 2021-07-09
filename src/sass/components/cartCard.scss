@@ -1,0 +1,55 @@
+.cart-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 10rem;
+    width: fir-content;
+    margin: 1.5rem 0;
+    
+    background-color:rgba(7, 168, 20, 0.753);
+    &__image{
+        height:100%;
+        width:30rem;
+    }
+    &__detail{
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__title{
+        font-size:2rem;
+
+    }
+    &__desc{
+        font-size:1.8rem;
+
+    }
+    &__amount{
+        font-size: 2.4rem;
+        font-weight:600;
+    }
+    &__actions{
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid grey;
+        input{
+            width: 3rem;
+
+            margin-top: 2rem;
+            border: none;
+            border-radius:12px
+        }
+        button{
+            border: none;
+            width: 4rem;
+            border-radius:18rem;
+            margin-top:4rem;
+            color:#fff;
+            background-color:rgb(187, 17, 17);
+            transition:.3s ease-in;
+            &:hover{
+                background-color:rgb(250, 150, 150);
+            }
+        }
+    }
+}

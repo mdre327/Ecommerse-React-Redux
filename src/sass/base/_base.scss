@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%; //defines root font size to 10px   (1201-1799px)
+
+  @include respond(tab-lg) {
+    //901-1200px
+    font-size: 56.25%; //1rem = 9px
+  }
+
+  @include respond(tab-sm) {
+    //601-900px
+    font-size: 50%; //1rem = 8px (8/16 = 50%)
+  }
+
+  @include respond(phone-lg) {
+    //401-600px
+    font-size: 37.5%; //1rem = 6px
+  }
+
+  @include respond(phone-sm) {
+    //0-400px
+    font-size: 43.75%; //1rem = 7px
+  }
+
+  @include respond(phone-xs) {
+    //0-400px
+    font-size: 37.5%; //1rem = 6px
+  }
+
+  @include respond(desktop-lg) {
+    //1800px onwards
+    font-size: 75%; //1rem = 12px
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $color-cly-blue;
+  overflow-x: hidden;
+}
